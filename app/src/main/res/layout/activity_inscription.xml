@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inscription">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Inscription"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Prenom"
+            android:padding="5dp"
+            android:textColor="@color/design_default_color_primary_dark"
+            app:met_floatingLabel="normal" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Email"
+            android:padding="5dp"
+            android:textColor="@color/design_default_color_primary_dark"
+            app:met_floatingLabel="normal" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textColor="@color/design_default_color_primary_dark"
+            app:met_floatingLabel="normal"
+            app:passwordToggleEnabled="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Telephone"
+            android:padding="5dp"
+            android:textColor="@color/design_default_color_primary_dark"
+            app:met_floatingLabel="normal" />
+
+        <RadioGroup
+            android:id="@+id/radiogp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:buttonTint="@color/design_default_color_primary_dark"
+                android:text="Homme"
+                android:textColor="@color/design_default_color_primary_dark" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:buttonTint="@color/design_default_color_primary_dark"
+                android:text="Femme"
+                android:textColor="@color/design_default_color_primary_dark" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/design_default_color_primary_dark"
+            android:text="S'inscrire"
+            android:id="@+id/register"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

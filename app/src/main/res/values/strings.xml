@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MySpace</string>
+    <string name="prefLoginState">loginstate</string>
+</resources>
